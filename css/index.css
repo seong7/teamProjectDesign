@@ -1,38 +1,105 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face{
+    font-family: noto_Bold;
+    src : url(../font/NotoSansCJKkr-Bold.otf);
+    font-style: normal;
+    font-weight: nomal;
+}
+@font-face{
+    font-family: noto_Black;
+    src : url(../font/NotoSansCJKkr-Black.otf);
+    font-style: normal;
+    font-weight: nomal;
+}
+@font-face{
+    font-family: noto_Demilight;
+    src : url(../font/NotoSansCJKkr-DemiLight.otf);
+    font-style: normal;
+    font-weight: nomal;
+}
+@font-face{
+    font-family: noto_Light;
+    src : url(../font/NotoSansCJKkr-Light.otf);
+    font-style: normal;
+    font-weight: nomal;
+}
+@font-face{
+    font-family: noto_Medium;
+    src : url(../font/NotoSansCJKkr-Medium.otf);
+    font-style: normal;
+    font-weight: nomal;
+}
+@font-face{
+    font-family: noto_Regular;
+    src : url(../font/NotoSansCJKkr-Regular.otf);
+    font-style: normal;
+    font-weight: nomal;
+}
+@font-face{
+    font-family: noto_Thin;
+    src : url(../font/NotoSansCJKkr-Thin.otf);
+    font-style: normal;
+    font-weight: nomal;
+}
+
 #homeLogo>img{
     display: block;
     margin : 0px auto;
     margin-top : 30px;
 }
-
-#menuNav{
-    position: sticky;
-    width: 100%;
+#wrapper{
     min-width: 1050px;
+    box-sizing: border-box;
+}
+#menuNav{
+    overflow: hidden;
+    width: 1050px;
+    height: 55px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
 .nav_main{
-    height: 35px;
-    margin-left : auto;
-    margin-right : auto;
-    margin-top: 35px;
-    padding : 0px;
+    overflow: hidden;
+    float: left;
+    height: 55px;
     text-align: center;
+    padding: 16px 50px 0 48px;
+    color: #333;
+    line-height: 20px;
+    display: table;
+    margin: auto; 
+    padding:0;
+
 }
 
 .nav_main>li{
-    float: left;
+    display: inline-block;
+    left : 50px;
+    font-size: 20px;
+    vertical-align: middle;
+    
 }
-.nav_main>li>a>span{
+.nav_main>li>a>i{
+    margin-right: 10px;
+    float: inline-start;
 }
 
 a{
-    padding: 16px 50px 0 48px;
+    display: block;
+    width: 175px;
+    height: 55px;
     cursor: pointer;
 }
+a:hover{
+    color: #ff9f43;
+}
+.nav_underline:hover{
+}
+a>span{
+    line-height: 50px;
+}
 .txt{
-    font-weight: 700;
     letter-spacing: 2px;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: noto_Bold;
 }
