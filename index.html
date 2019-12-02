@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
 <link rel="stylesheet" href="css/reset.css">
 <meta charset="utf-8">
@@ -16,64 +17,98 @@
             </div>
             <!--로고 이미지 Div-->
             <div id="homeLogo">
-                <img src="img/logoImshi.png" alt="이미지 로딩 불가!">
+                <img src="img/breadLogo.jpg" alt="이미지 로딩 불가!">
                 <!--LOGO-->
             </div>
-            <!--메뉴 네비게이션(sticky)-->
-            <div id="menuNav">
-                <!--nav 구성 :2개의 슬라이드 메뉴, 신상품, 알뜰쇼핑, 이벤트, 검색창(search icon), shopping icon(장바구니)-->
-                <div id="nav_Div">
-                    <ul class="nav_main">
-                        <li id="nav_start">
-                            <a>
-                                <i class="fas fa-bars"></i>
-                                <span class="txt">빵</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <i class="fas fa-bars"></i>
-                                <span class="txt">떡</span>
-                            </a>
-                        </li>
-                        <li>
-                                <a class="nav_underline">
-                                <span class="txt">신상품</span>
-                            </a>
-                        </li>
-                        <li>
+            <div id="search_div"">
+                <form action="" id="search_form">
+                    <label>
+                        <input type="text" id="search_input" placeholder="상품을 입력하세요">
+                        <i class="fas fa-search"></i>
+                    </label>
+                </form>
+            </div>
+            
+        </div>
+        <!--메뉴 네비게이션(sticky)-->
+        <div id="menuNav">
+            <!--nav 구성 :2개의 슬라이드 메뉴, 신상품, 알뜰쇼핑, 이벤트, 검색창(search icon), shopping icon(장바구니)-->
+            <div id="nav_Div">
+                <ul class="nav_main">
+                    <li id="nav_start">
+                        <a id="breadNav">
+                            <i class="fas fa-bars"></i>
+                            <span class="txt">빵</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <i class="fas fa-bars"></i>
+                            <span class="txt">떡</span>
+                        </a>
+                    </li>
+                    <li>
                             <a class="nav_underline">
-                                <span class="txt">알뜰쇼핑</span>
-                            </a>
-                        </li>
-                        <li>
-                                <a class="nav_underline">
-                                <span class="txt">이벤트</span>
-                            </a>    
-                        </li>
-                    </ul>
-                    <div id="side_search">
-                        <form action="">
-                            
-                        </form>
-                        <!--search Icon-->
+                            <span class="txt">신상품</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav_underline">
+                            <span class="txt">알뜰쇼핑</span>
+                        </a>
+                    </li>
+                    <li>
+                            <a class="nav_underline">
+                            <span class="txt">이벤트</span>
+                        </a>    
+                    </li> 
+                </ul>
+                <i class="fas fa-shopping-cart"></i>
+                <input type="checkbox" id="userPopup">
+                <label for="userPopup">
+                    <i class="fas fa-user"></i>
+                </label>
+                <div >
+                    <div>
+                        <label for="userPopup"></label>
                     </div>
-                    <!--Shopping Icon-->
                 </div>
-                <div id="bread_sub">
-                    <!--빵 slide menu ※기본속성 display none-->
-                </div>
-                <div id="Ricecake_sub">
-                    <!--떡 slide menu ※기본속성 display none-->
-                </div>
+                <label for="userPopup"></label>
+            </div>
+            <div id="bread_sub">
+                <!--빵 slide menu ※기본속성 display none-->
+
+            </div>
+            <div id="ricecake_sub">
+                <!--떡 slide menu ※기본속성 display none-->
             </div>
         </div>
+        <!--이미지 슬라이더-->
+        <div id="slide">
+            <input type="radio" name="pos" id="pos1" checked>
+            <input type="radio" name="pos" id="pos2">
+            <input type="radio" name="pos" id="pos3">
+            <input type="radio" name="pos" id="pos4">
+            <ul>
+              <li>slide1</li>
+              <li>slide2</li>
+              <li>slide3</li>
+              <li>slide4</li>
+            </ul>
+            <p class="pos">
+              <label for="pos1"></label>
+              <label for="pos2"></label>
+              <label for="pos3"></label>
+              <label for="pos4"></label>
+            </p>
+          </div>
+          
         <!--메인 Div-->
         <div id="main">
             <!--main contents Wrapper-->
             <div id="contents">
                 <!--bx wrppaer div 필요-->
-
+                asdfasdfasd
                 <!--상품 진열-->
             </div>
         </div>
@@ -90,4 +125,7 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="js/index.js"></script>
+
 </body>
+</html>
