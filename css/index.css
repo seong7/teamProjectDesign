@@ -3,43 +3,43 @@
     font-family: noto_Bold;
     src : url(../font/NotoSansCJKkr-Bold.otf);
     font-style: normal;
-    font-weight: nomal;
+    font-weight: normal;
 }
 @font-face{
     font-family: noto_Black;
     src : url(../font/NotoSansCJKkr-Black.otf);
     font-style: normal;
-    font-weight: nomal;
+    font-weight: normal;
 }
 @font-face{
     font-family: noto_Demilight;
     src : url(../font/NotoSansCJKkr-DemiLight.otf);
     font-style: normal;
-    font-weight: nomal;
+    font-weight: normal;
 }
 @font-face{
     font-family: noto_Light;
     src : url(../font/NotoSansCJKkr-Light.otf);
     font-style: normal;
-    font-weight: nomal;
+    font-weight: normal;
 }
 @font-face{
     font-family: noto_Medium;
     src : url(../font/NotoSansCJKkr-Medium.otf);
     font-style: normal;
-    font-weight: nomal;
+    font-weight: normal;
 }
 @font-face{
     font-family: noto_Regular;
     src : url(../font/NotoSansCJKkr-Regular.otf);
     font-style: normal;
-    font-weight: nomal;
+    font-weight: normal;
 }
 @font-face{
     font-family: noto_Thin;
     src : url(../font/NotoSansCJKkr-Thin.otf);
     font-style: normal;
-    font-weight: nomal;
+    font-weight: normal;
 }
 /*전체 컴포넌트 Wrapper 클래스(modal window 제외 Wrap)*/
 #wrapper{
@@ -77,6 +77,7 @@
 
 /*search icon position, color set */
 .fa-search{
+    cursor: pointer;
     position: absolute;
     margin-top: 15px;
     margin-left: -40px;
@@ -179,9 +180,7 @@ ul,li{list-style:none;}
   #pos2:checked~.pos>label:nth-child(2){background:#666;}
   #pos3:checked~.pos>label:nth-child(3){background:#666;}
   #pos4:checked~.pos>label:nth-child(4){background:#666;}
-#contents{
-    font-size: 5000px;
-}
+
 /*userPopup checkbox*/
 input[id*='userPopup']{
     display: none;
@@ -198,26 +197,29 @@ input[id*='userPopup']{
 }
 #modalDiv > div{
     position: absolute;
+    transition: all .05s;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 0px;
-    height: 0px; 
-    transition: all .05s;
     transition-duration: .6s;
-    background-color: coral;
+    background: url(../img/loginFormBg.jpeg);
     z-index: 2;
+    border :1px solid #fad390;
+    box-shadow: 0px 0px 20px 10px rgba(	250, 211, 144, 0.4);
 }
 
 #modalDiv > div > label{
+    display: none;
     position: absolute;
     top: 3%;
     right: 3%;
+    width: 50px;
+    height: 50px;
     transform: translate(40%, -40%);
     padding: 20px;
     background-color: crimson;
     border-radius: 100%;
-    z-index : 1;
+    z-index: 1;
 }
 #modalDiv > label{
     position: absolute;
@@ -227,4 +229,9 @@ input[id*='userPopup']{
     height: 100%;
     background-color: rgba(0, 0, 0, .7);
     z-index: 1;
+}
+
+
+#contents{
+    font-size: 5000px;
 }

@@ -4,7 +4,8 @@ function init(){
     const userCheckBox = document.querySelector('#userPopup');
     const modalWindow = document.getElementById('modalDiv');
     const modalInnerFrame = document.getElementById('modalInnerFrame');
-
+    modalInnerFrame.style.width = "0px";
+    modalInnerFrame.style.height = "0px";
     userCheckBox.addEventListener('change', function(){
         if(!modaltrigger){
             modalWindow.style.display = 'block';
